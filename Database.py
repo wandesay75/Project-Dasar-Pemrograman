@@ -25,6 +25,6 @@ assets = [
         "no_rekening" : "12211265",
         "username" : "Haikal Mumtaz",
         "pin" : "1412",
-        "saldo" : 23350000
+        "saldo" : 25000000
     }
 ]
