@@ -2,7 +2,7 @@ from Database import assets
 
 user_id = 0
 loop = "n"
-status_login = False
+status = False
 credit_card = "y"
 
 def cek_login(p):
@@ -54,16 +54,16 @@ print("         SELAMAT DATANG DI ATM BANK 12.1A.15         ")
 print(50*'=')
 
 while credit_card == "y":
-    while not status_login:
+    while not status:
         print("Silahkan masukan pin anda!")
         pin = input("Masukan Kode PIN : ")
         login = cek_login(pin)
     
         if login:
             print()
-            print("            Masuk sebagai "   + login['username']           )
+            print("            Masuk sebagai "   + login['nama_pengguna']           )
             user_id = login['id']
-            status_login = True
+            status = True
             loop = "y"
         else:
             print("")
@@ -72,9 +72,8 @@ while credit_card == "y":
             print(" MASUKAN PIN ANDA DENGAN BENAR! ")
             print("")
 
-    while loop == "y" and status_login:
+    while loop == "y" and status:
         id = assets[cek_user(user_id)]
-        print()
         print(50*"=")
         print("         PILIH TRANSAKSI YANG ANDA INGINKAN           ")
         print(50*"=")
@@ -99,8 +98,8 @@ while credit_card == "y":
             print(50*"=")
             no_rek = input(" Masukan No Rekening Tujuan : ")
             print("")
-            cnk = cek_rekening(no_rek)
-            if cnk >= 0:
+            a = cek_rekening(no_rek)
+            if a >= 0:
                 print(50*"=")
                 print("             SILAHKAN MASUKAN NOMINAL ")
                 print(50*"=")
@@ -122,16 +121,20 @@ while credit_card == "y":
             print("")
             loop = "n"
         elif opsi == 4:
-            status_login = False
+            status = False
+            print("**************************************************")
+            print("                 ", login['nama_pengguna'])
+            print("Anda telah Logout dari ATM silahkan Login kembali")
+            print("***************************************************")
 
         elif opsi == 5:
-            status_login = False
+            status = False
             loop = "n"
-            pakai_atm = "n"
+            credit_card = "n"
         else:
             print("pilihan tidak tersedia")
 
-        if status_login == True:
+        if status == True:
             input("Kembali ke menu (TEKAN Enter) ")
             print("")
             loop = "y"
