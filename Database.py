@@ -2,29 +2,29 @@ assets = [
     {
         "id": "01",
         "no_rekening": "12210247",
-        "username": "Alvin Austin",
-        "pin": "6969",
-        "saldo": 10000000
+        "nama_pengguna": "Alvin Austin",
+        "pin": "1122",
+        "saldo": 1500000
     },
     {
         "id": "02",
         "no_rekening": "12211125",
-        "username": "Raihan Ramadhan",
-        "pin": "8888",
-        "saldo": 25000000
+        "nama_pengguna": "Raihan Ramadhan",
+        "pin": "3344",
+        "saldo": 2000000
     },
     {
         "id" : "03",
         "no_rekening" : "12210613",
-        "username" : "Marsa Adytia",
+        "nama_pengguna" : "Marsa Adytia",
         "pin" : "0202",
         "saldo" : 5550000
     },
     {
         "id" : "04",
         "no_rekening" : "12211265",
-        "username" : "Haikal Mumtaz",
+        "nama_pengguna" : "Haikal Mumtaz",
         "pin" : "1412",
-        "saldo" : 25000000
+        "saldo" : 23350000
     }
 ]
