@@ -1,6 +1,7 @@
 #Rangkuman Materi Dari Tugas Dasar Pemrograman pada Project Mesin ATM yang bernama Bank RUT
 
-Kumpulan Inti Pengertian Python
+Berikut penjelasan - penjelasan mengenai project kami:
+
 1. Python merupakan bahasa pemrograman yang memiliki sintaks yang
 sederhana dan mudah dimengerti.
 
